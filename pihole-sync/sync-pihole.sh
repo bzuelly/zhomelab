@@ -1,7 +1,9 @@
 #!/bin/bash
 logfile="/var/log/pihole-sync/sync.$(date +%Y-%m-%d_%H:%M).log"
-exec 1>> > (ts '%Y-%m-%d %H:%M:%S]' > "$logfile") 2>&1
+exec 1>> >(ts '%Y-%m-%d %H:%M:%S]' > "$logfile") 2>&1
 
+
+echo "starting pihole-sync..."
 echo "stopping pihole on pihole2"
 clush -n -g pihole2 systemctl stop pihole-FTL
 
