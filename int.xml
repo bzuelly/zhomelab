@@ -1,0 +1,14 @@
+<network>
+  <name>int2</name>
+  <forward mode='nat'/>
+  <bridge name='virbr100' stp='on' delay='0'/>
+  <mac address='52:54:00:75:40:31'/>
+  <ip address='192.168.100.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.100.200' end='192.168.100.254'/>
+      <host mac='52:54:00:4d:44:fc' ip='192.168.100.205'/>
+      <host mac='52:54:00:4c:ec:b4' ip='192.168.100.206'/>
+      <host mac='52:54:00:cc:8c:9d' ip='192.168.100.207'/>
+    </dhcp>
+  </ip>
+</network>

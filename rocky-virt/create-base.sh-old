@@ -8,7 +8,7 @@ sudo virt-install --virt-type kvm --name rocky-linux-8 \
   --vcpus=2 \
   --os-type=linux \
   --location /tmp/Rocky-8.4-x86_64-minimal.iso \
-  --network bridge=br1 \
+  --network bridge=br10 \
   --graphics=none \
   #--noautoconsole \
   --os-variant=rhl8.0 \  
